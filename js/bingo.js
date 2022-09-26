@@ -53,6 +53,11 @@ export default class Bingo {
     // let card = new Card(this.cards[i]);
     // render the card
     // card.render();
+    
+    this.cards.map((card, index) => {
+        let cardObject = new Card(card);
+        cardObject.render(index);
+    });
   }
 
   static checkWinner() {
