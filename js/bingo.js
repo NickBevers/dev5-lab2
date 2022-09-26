@@ -120,6 +120,7 @@ export default class Bingo {
             cards.forEach(card => {
                 document.querySelector(`[data-number="${card}"]`).classList.add("bingo__card--done");
             });
+            this.checkWinner();
         }
     }
 }
