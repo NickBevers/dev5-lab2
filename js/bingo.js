@@ -44,7 +44,7 @@ export default class Bingo {
 
   renderCards() {
     // this function renders the cards to the screen
-    console.log("rendering cards");
+    // console.log("rendering cards");
 
     // 🔥🔥🔥 TODO 2
     // loop through all the cards in the array and create a new instance of a Card()
@@ -62,7 +62,7 @@ export default class Bingo {
 
   static checkWinner() {
     // a static function can be called without creating an instance of the class
-    console.log("Checking for a winner");
+    // console.log("Checking for a winner");
 
     // 🔥🔥🔥 TODO 6
     // count all cards that are marked as done (select done items and count them with .length)
@@ -79,7 +79,7 @@ export default class Bingo {
     // you can simply save an array with the card numbers like [1, 6, 8]
     // https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
     let cardsWon = [];
-    console.log("Saving bingo to localstorage");
+    // console.log("Saving bingo to localstorage");
     // let cards = document.querySelectorAll(".bingo__card--done");
 
     // if there are not done cards, remove localstorage
@@ -96,7 +96,7 @@ export default class Bingo {
     // load the cards that are done from localstorage
     // this works the other way around of the save function
     // load the saved string from localstorage and parse it as an array, then loop over it
-    console.log("loading bingo selection from localstorage");
+    // console.log("loading bingo selection from localstorage");
 
     // check if localstorage item exists
     if (localStorage.getItem("bingo")) {
